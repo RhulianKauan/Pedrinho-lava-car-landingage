@@ -97,13 +97,13 @@ header .container{
     text-align: center;
     color: var(--cor-h1);
     font-size: 2.8rem;
+    padding: 0 16px;
 }
 
 .titulo h2 {
     color: var(--cor-h2);
     font-weight: 100;
     font-size: 1.25rem;
-    padding: 0 36px;
 }
 
 .btn-banner {
