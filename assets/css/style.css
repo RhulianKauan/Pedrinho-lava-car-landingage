@@ -34,6 +34,10 @@ body {
 }
 
 
+button {
+    cursor: pointer;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -106,6 +110,14 @@ header .container{
     font-size: 1.25rem;
 }
 
+.titulo p {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    bottom: -100px;
+    
+}
+
 .btn-banner {
     padding: 16px 32px;
     margin-top: 24px;
@@ -162,116 +174,216 @@ header .container{
         margin: 0 1rem;
         border-bottom: 2px solid rgba(0, 0, 0, 0.05);
     }
-}
+    
+    .default {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 124px;
+    }
+    
+    .default-title h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        color: #03263B;
+        margin-bottom: 64px;
+    }
+    
+    .default-body img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .default-body p {
+        color: #03263B;
+        font-size: 1.1rem;
+        text-align: center;
+        width: auto;
+        padding: 0px 20px;
+        margin: auto;
+        margin-top: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    
+    .default .servico-card {
+        display: flex;
+        overflow: hidden;
+        box-sizing: border-box;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(247, 247, 247);
+        width: 300px;
+        height: 450px;
+        margin: auto;
+        margin-bottom: 32px;
+        border-radius: 24px;
+        /* width: 300px; */
+        padding-bottom: 24px;
+        box-shadow: 1px 1px 20px #03253b33;
+    }
+    
+    .servico-card img {
+        width: 100%;
+        margin-bottom: 24px;
+        transition: .3s;
+    }
+    
+    .servico-card img:hover {
+        transform: scale(1.1);
+    }
+    
+    .servico-card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 8px;
+    }
+    
+    .servico-card p {
+        text-align: center;
+        padding: 0px 32px;
+    }
+    
+    
+    .map {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #053C5E;
+    }
+    
+    .map iframe {
+        flex: 1;
+    }
+    
+    .card--montagem-pacote {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 300px;
+        height: 450px;
+        border: 2.5px dashed #000;
+        border-radius: 24px;
+    }
+    
+    .card--montagem-pacote button {
+        background-color: #DB222A;
+        color: #fff;
+        margin-top: 24px;
+        padding: 16px 48px;
+        border-radius: 24px;
+        border: none;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+        transition: .2s;
+    }
+    
+    .card--montagem-pacote button:hover {
+        background-color: #03263B;
+    }
+    
+    .card--montagem-pacote .icon-pacote {
+        font-size: 48px;
+    }
+    
+    
+    .default.contato {
+        background-color: #053C5E;
+        padding-top: 48px;
+    }
+    
+    .default.contato h2 {
+        color: #fff;
+        margin-bottom: 24px;
+    }
+    
+    .default.contato .default-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+        margin: auto;
+        width: 70%;
+        height: auto;
+        padding: 16px;
+        border-radius: 16px;
+        margin-bottom: 24px;
+    }
+    
+    .btn-contato {
+        display: flex;
+        width: 60%;
+        height: min-content;
+        text-align: center;
+        color: #03263B;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 48px;
+        border-radius: 48px;
+        background-color: #e7e7e7;
+        transition: .4s;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    }
+    
+    .btn-contato .icon-contato {
+        font-size: 48px;
+    }
+    
+    .btn-contato:hover {
+        background-color: #03263B;
+        color: #fff;
+        justify-content: space-around;
+    }
 
-.default {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 124px;
-}
+    .accordion {
+        width: 100%;
+    }
+    
+    .accordion .contentBx {
+        position: relative;
+        margin: 5px 20px;
+    }
+    
+    .accordion .contentBx .label {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        position: relative;
+        padding: 10px 20px;
+        background-color: var(--cor-secundaria);
+        color: #fff;
+        border-radius: 2px;
+    }
+    
+    .accordion .contentBx .label::before {
+        content: '+';
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+    }
 
-.default-title h2 {
-    font-size: 1.8rem;
-    text-align: center;
-    color: #03263B;
-    margin-bottom: 64px;
-}
+    .accordion .contentBx .content {
+        position: relative;
+        background-color: #eee;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        overflow-y: auto;
+        border-radius: 2px;
+    }
 
-.default-body img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    object-position: top;
-}
-.default-body p {
-    color: #03263B;
-    font-size: 1.1rem;
-    text-align: center;
-    width: auto;
-    padding: 0px 20px;
-    margin: auto;
-    margin-top: 16px;
-    font-weight: 500;
-    line-height: 24px;
-}
+    .accordion .contentBx.active .label::before {
+        content: '-';
+    }
 
-.default .servico-card {
-    display: flex;
-    overflow: hidden;
-    box-sizing: border-box;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(247, 247, 247);
-    width: 300px;
-    height: 450px;
-    margin: auto;
-    margin-bottom: 32px;
-    border-radius: 24px;
-    /* width: 300px; */
-    padding-bottom: 24px;
-    box-shadow: 1px 1px 20px #03253b33;
-}
+    .accordion .contentBx.active .content {
+        height: 100px;
+        padding: 16px;
+    }
 
-.servico-card img {
-    width: 100%;
-    margin-bottom: 24px;
-    transition: .3s;
-}
-
-.servico-card img:hover {
-    transform: scale(1.1);
-}
-
-.servico-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 8px;
-}
-
-.servico-card p {
-    text-align: center;
-    padding: 0px 32px;
-}
-
-
-.map {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #053C5E;
-}
-
-.map iframe {
-    flex: 1;
-}
-
-.card--montagem-pacote {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 300px;
-    height: 450px;
-    border: 2px dashed #000;
-    border-radius: 24px;
-}
-
-.card--montagem-pacote button {
-    background-color: #DB222A;
-    color: #fff;
-    margin-top: 24px;
-    padding: 16px 48px;
-    border-radius: 24px;
-    border: none;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
-    transition: .2s;
-}
-
-.card--montagem-pacote button:hover {
-    background-color: #03263B;
-}
-
-.card--montagem-pacote .icon-pacote {
-    font-size: 48px;
 }
