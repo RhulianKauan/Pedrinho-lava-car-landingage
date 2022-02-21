@@ -386,4 +386,9 @@ header .container{
         padding: 16px;
     }
 
+    .container-img {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }   
+
 }
