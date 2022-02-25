@@ -16,3 +16,6 @@ toggeList.forEach((item)=> {
         item.classList.toggle('active')
     })
 })
+
+
+const btnMonteSeuPacote = document.querySelector('#monte-pacote')

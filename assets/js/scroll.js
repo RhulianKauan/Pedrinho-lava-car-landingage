@@ -4,7 +4,7 @@
 // Verificar a distância entre o alvo e o topo
 // Animar o scroll até o alvo
 
-const menuItems = document.querySelectorAll('#menu a[href^="#"]');
+const menuItems = document.querySelectorAll('a[href^="#"]');
 
 function getScrollTopByHref(element) {
 	const id = element.getAttribute('href');
@@ -12,11 +12,6 @@ function getScrollTopByHref(element) {
 }
 
 function scrollToPosition(to) {
-  // Caso queira o nativo apenas
-	// window.scroll({
-	// top: to,
-	// behavior: "smooth",
-	// })
   smoothScrollTo(0, to);
 }
 
@@ -30,13 +25,6 @@ menuItems.forEach(item => {
 	item.addEventListener('click', scrollToIdOnClick);
 });
 
-// Caso deseje suporte a browsers antigos / que não suportam scroll smooth nativo
-/**
- * Smooth scroll animation
- * @param {int} endX: destination x coordinate
- * @param {int) endY: destination y coordinate
- * @param {int} duration: animation duration in ms
- */
 function smoothScrollTo(endX, endY, duration) {
   const startX = window.scrollX || window.pageXOffset;
   const startY = window.scrollY || window.pageYOffset;
@@ -60,5 +48,5 @@ function smoothScrollTo(endX, endY, duration) {
       clearInterval(timer);
     }
     window.scroll(newX, newY);
-  }, 1000 / 60); // 60 fps
+  }, 1000 / 60); 
 };

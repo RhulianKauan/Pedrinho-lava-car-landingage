@@ -244,6 +244,8 @@ footer p {
 
 .servico-card img {
     width: 100%;
+    height: 150px;
+    object-fit: cover;
     margin-bottom: 24px;
     transition: .3s;
 }
@@ -362,6 +364,7 @@ footer p {
 
 .accordion .contentBx {
     position: relative;
+    width: 400px;
     margin: 5px 20px;
 }
 
