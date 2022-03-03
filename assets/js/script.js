@@ -27,16 +27,3 @@ accordion.forEach((item, index)=> {
 
 const btnMonteSeuPacote = document.querySelector('#monte-pacote')
 
-
-// Animação
-
-ScrollReveal({
-    reset: true,
-    distance: '30px',
-    duration: 2000,
-    delay: 400
-});
-
-ScrollReveal().reveal('.banner', { delay: 400 });
-ScrollReveal().reveal('.sobre', { delay: 400 });
-ScrollReveal().reveal('.servico-card', { delay: 400 });
