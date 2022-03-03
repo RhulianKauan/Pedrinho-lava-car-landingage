@@ -56,17 +56,17 @@ ul li {
 
 .menu {
     display: flex;
-    gap: 10px;
 }
 
 .menu a {
     display: block;
     padding: 8px 16px;
     font-weight: 600;
+    margin-right: 10px;
 }
 
 .menu a:hover {
-    background-color: #eee;
+    background-color: rgb(207, 207, 207);
 }
 
 .btn-menu {
@@ -160,7 +160,6 @@ section h2 {
     justify-content: start;
     align-items: center;
     width: 100%;
-    gap: 32px;
 }
 
 .sobre .img-local {
@@ -172,10 +171,12 @@ section h2 {
     height: 500px;
     border-radius: 8px;
     margin-bottom: 24px;
+    margin-right: 32px;
 }
 
 .sobre p {
     max-width: 380px;
+    margin-bottom: 24px;
 }
 
 .line {
@@ -187,7 +188,6 @@ section h2 {
 .container-sobre--text {
     display: flex;
     flex-direction: column;
-    gap: 24px;
     padding: 0px 24px;
 }
 
@@ -196,7 +196,6 @@ section h2 {
 .container-cards {
     display: flex;
     justify-content: center;
-    gap: 16px;
     flex-wrap: wrap;
     margin: 0 32px;
 }
@@ -208,6 +207,7 @@ section h2 {
     border-radius: 8px;
     box-shadow: 1px 1px 15px #03253b3f;
     text-align: center;
+    margin: 8px;
 }
 
 .card img {
@@ -244,7 +244,6 @@ section h2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 16px;
     margin-bottom: 24px;
 }
 
@@ -258,6 +257,7 @@ section h2 {
     border-radius: 8px;
     font-weight: 600;
     color: #fff;
+    margin: 8px;
 }
 
 .container-contato div:hover {
@@ -283,8 +283,11 @@ section h2 {
 .container-accordion {
     display: flex;
     flex-direction: column;
-    gap: 8px;
     width: 500px;
+}
+
+.box-accordion {
+    margin-bottom: 8px;
 }
 
 .accordion {
@@ -381,6 +384,7 @@ footer {
     
     .sobre .img-local {
         height: 450px;
+        margin-right: 0px;
     }
 
     .sobre .img-local {
