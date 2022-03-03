@@ -1,9 +1,8 @@
-- [ ] Corrigir responsividade
-- [ ] Terminar aba de serviços
-- [ ] Implementar área de contatos
-- [ ] Implementar área de dúvidas
-- [ ] Implementar cabeçalho
-- [ ] Colocar efeito de transição conforme scrolla na página
+- [x] Corrigir responsividade
+- [x] Terminar aba de serviços
+- [x] Implementar área de contatos
+- [x] Implementar área de dúvidas
+- [x] Implementar cabeçalho
 - [ ] Escrever todas as informações que preciso para colocar na página
 - [ ] Fazer retoques
 - [ ] Fazer um readme 

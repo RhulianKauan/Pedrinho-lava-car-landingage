@@ -35,6 +35,10 @@ ul li {
     list-style: none;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .logo {
     display: flex;
 }
@@ -201,7 +205,10 @@ section h2 {
 }
 
 .card {
-    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
     width: 240px;
     overflow: hidden;
     border-radius: 8px;
@@ -213,12 +220,16 @@ section h2 {
 .card img {
     width: 100%;
     transition: .3s;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .card h3 {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-size: 1.1rem;
+}
+
+.card ul {
+    text-align: start;
 }
 
 .card p {
