@@ -1,0 +1,11 @@
+- [ ] Corrigir responsividade
+- [ ] Terminar aba de serviços
+- [ ] Implementar área de contatos
+- [ ] Implementar área de dúvidas
+- [ ] Implementar cabeçalho
+- [ ] Colocar efeito de transição conforme scrolla na página
+- [ ] Escrever todas as informações que preciso para colocar na página
+- [ ] Fazer retoques
+- [ ] Fazer um readme 
+- [ ] Postar no github
+- [ ] Comprar serviço de roteamento e domínio
