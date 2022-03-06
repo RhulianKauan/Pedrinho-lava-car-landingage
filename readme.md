@@ -8,7 +8,7 @@
 
 - [x] Banner
 - [x] Sobre
-- [x] Serviços
+- [x] Servi
 - [x] Contatos
 - [x] Localização
 - [x] Dúvidas frequentes
