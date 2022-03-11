@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Quicksand:wght@300;400;600;700&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Quicksand:wght@300;400;600;700&family=Roboto:wght@300;400;700;900&display=swap');
 
 
 
@@ -13,17 +15,28 @@
     --cor-text: #03263B;
 
     /* FONTE */
-    --font:'Quicksand', sans-serif;
+    --font-title: 'roboto', sans serif;
+    --font-body: 'roboto', sans-serif;
 
     /* FONT-SIZE */
     --font-size--h2: 1.8rem;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-title);
+    font-weight: 700;
 }
 
 
 * {
     margin: 0;
     padding: 0;
-    font-family: var(--font);
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 700;
 }
 
 a {
@@ -38,6 +51,7 @@ ul li {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .logo {
     display: flex;
@@ -70,7 +84,7 @@ html, body {
 }
 
 .menu a:hover {
-    background-color: rgb(207, 207, 207);
+    color: #DB222A;
 }
 
 .btn-menu {
@@ -85,10 +99,10 @@ html, body {
 /*  B A N N E R */
 
 .banner {
-    background-image: url(/assets/img/banner.png);
+    background-image: url(/assets/img/banner2-escura.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
+    background-position: center;
     width: auto;
     height: calc(100vh - 54px);
     background-attachment: fixed;
@@ -101,18 +115,47 @@ html, body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 85%;
     color: #fff;
 }
 
 .titulo h1 {
-    font-size: 4rem;
+    position: relative;
+    font-weight: 900;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: var(--cor-secundaria);
+    overflow: hidden;
+}
+
+.titulo h1:before {
+    content: attr(data-text);
+    position: absolute;
+    border-right: 2px solid var(--cor-primaria);
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: var(--cor-primaria);
+    overflow: hidden;
+    animation: animate .5s linear forwards;
+    animation-delay: 1s;
+    white-space: nowrap;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 .titulo h2 {
-    font-size: 1.4rem;
-    font-weight: normal;
-    margin-bottom: 24px;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 32px;
 }
 
 .btn-banner {
@@ -121,13 +164,23 @@ html, body {
     border: none;
     outline: none;
     border-radius: 32px;
-    background-color: #DB222A;
+    background-color: #db222b00;
+    border: 2px solid var(--cor-primaria);
     color: #fff;
-    margin-bottom: 72px;
+    cursor: pointer;
+}
+
+.btn-banner:hover {
+    background-color: #202020a1;
+}
+
+.btn-banner:active {
+    background-color: #3f090b;
 }
 
 .titulo p {
     text-align: center;
+    margin-top: 72px;
 }
 
 /* MAIN */
@@ -181,6 +234,7 @@ section h2 {
 .sobre p {
     max-width: 380px;
     margin-bottom: 24px;
+    line-height: 26px;
 }
 
 .line {
@@ -207,37 +261,74 @@ section h2 {
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: auto;
-    width: 240px;
+    width: 280px;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 1px 1px 15px #03253b3f;
-    text-align: center;
     margin: 8px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card img {
     width: 100%;
+    height: 180px;
+    object-fit: cover;
     transition: .3s;
+    margin-bottom: 16px;
+    box-shadow: 0px 1px 10px #053c5e70;
+}
+
+.card h3,
+.card ul,
+.tempo {
+    display: block;
+    width: 100%;
+    padding-left: 16px;
     margin-bottom: 16px;
 }
 
 .card h3 {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 1.25rem;
 }
 
 .card ul {
+    height: 120px;
     text-align: start;
+    font-size: 0.9rem;
+    margin-left: 16px;
+    word-wrap: normal;
+}
+
+.card ul li {
+    list-style: disc;
+    word-wrap: normal;
 }
 
 .card p {
-    margin: 16px;
+    display: block;
+    font-size: 1 rem;
 }
 
-.card img:hover {
-    transform: scale(1.1);
+.tempo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    white-space: nowrap;
+}
+
+.icon-timer {
+    margin-right: 8px;
+    color: #03263B;
+    font-size: 20px;
 }
 
 /* CONTATO */
@@ -317,7 +408,7 @@ section h2 {
 
 .label {
     display: block;
-    background-color: #e0e0e0;
+    background-color: #f0f0f0;
     color: #03263B;
     font-weight: 500;
     overflow: hidden;
@@ -338,6 +429,7 @@ footer {
     height: 100px;
     text-align: center;
     color: #fff;
+    line-height: 24px;
 }
 
 
@@ -401,7 +493,23 @@ footer {
     .sobre .img-local {
         margin-bottom: 16px;
     }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 290px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 1px 1px 15px #03253b3f;
+        margin: 8px;
+        transition: .3s;
+        margin-bottom: 16px;
+    }
 
+    .card:hover {
+        transform: none;
+    }
 }
 
 .active {
@@ -411,7 +519,7 @@ footer {
 
 @media (max-width: 768px) {
     .sobre .img-local {
-        height: 400px;
+        height: 300px;
     }
     
     .banner {
