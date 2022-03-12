@@ -3,8 +3,8 @@
 <p align="center">Landing page responsiva usando HTML, CSS e JavaScript</p>
 <h4 align="center"> 
 	🚧  STATUS 🚀 Em construção...  🚧
-	[Página no ar](https://pedrinholavacar.com.br/)
 </h4>
+[Página no ar](https://pedrinholavacar.com.br/)
 
 ### Checklist
 
