@@ -4,7 +4,9 @@
 <h4 align="center"> 
 	🚧  STATUS 🚀 Em construção...  🚧
 </h4>
-[Página no ar](https://pedrinholavacar.com.br/)
+
+[Acesar 🔗](https://pedrinholavacar.com.br/)
+
 
 ### Checklist
 
