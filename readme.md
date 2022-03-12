@@ -1,21 +1,28 @@
 <h1 align="center">Landing Page: Pedrinho Lava Car</h1>
+
 <p align="center">Landing page responsiva usando HTML, CSS e JavaScript</p>
 <h4 align="center"> 
 	🚧  STATUS 🚀 Em construção...  🚧
+	[Página no ar]()
 </h4>
 
 ### Checklist
 
 - [x] Banner
 - [x] Sobre
-- [x] Servi
+- [x] Serviços
 - [x] Contatos
 - [x] Localização
 - [x] Dúvidas frequentes
 - [x] Responsividade
-- [ ] Monte seu pacote
-- [ ] Animações
+- [x] Animações
+- [ ] Botão mais informações nos cards
 - [ ] Modo escuro
+- [ ] Sessão galeria
+- [ ] Monte seu pacote
+- [ ] Sessão de dicas
+
+
 
 ### 🛠 Tecnologias
 
@@ -24,10 +31,9 @@
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 ### Recursos
-
-
-### Outros
 - [Remix Icon](https://remixicon.com/)
+- [ScrollReveal](https://scrollrevealjs.org/)
+
 
 
 

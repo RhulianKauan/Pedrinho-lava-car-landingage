@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Quicksand:wght@300;400;600;700&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Quicksand:wght@300;400;600;700&family=Roboto:wght@300;400;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 
 
 /* Variáveis */
@@ -91,6 +87,7 @@ html, body {
 .btn-menu {
     display: none;
     font-size: 20px;
+    color: #03263B;
 }
 
 .modal {
@@ -106,7 +103,6 @@ html, body {
     background-position: center;
     width: auto;
     height: calc(100vh - 54px);
-    background-attachment: fixed;
     background-color: #053C5E;
 }  
 
@@ -123,7 +119,7 @@ html, body {
 .titulo h1 {
     position: relative;
     font-weight: 900;
-    font-size: 4.5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     color: var(--cor-secundaria);
     overflow: hidden;
@@ -405,10 +401,11 @@ section h2 {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 8px 24px;
+    padding: 16px 24px;
     background-color: #124a6d;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
+    border-radius: 6px;
 }
 
 .accordion span {
@@ -478,16 +475,12 @@ footer {
     }
 
     .titulo h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .titulo h2 {
         font-size: 1.25rem;
     }
-
-    .banner {
-        background-position: bottom;
-    }  
 
     .container-section--sobre {
         flex-wrap: wrap;
@@ -497,9 +490,6 @@ footer {
     .sobre .img-local {
         height: 450px;
         margin-right: 0px;
-    }
-
-    .sobre .img-local {
         margin-bottom: 16px;
     }
     
@@ -514,6 +504,7 @@ footer {
         margin: 8px;
         transition: .3s;
         margin-bottom: 16px;
+        border-bottom: 3px solid var(--cor-primaria);
     }
 
     .card:hover {
@@ -528,16 +519,48 @@ footer {
 
 @media (max-width: 768px) {
     .sobre .img-local {
-        height: 300px;
+        height: 400px;
     }
-    
-    .banner {
-        background-position-y: 20px;
-    }  
+
+    .titulo h1 {
+        font-size: 2.2rem;
+    }
+
+    .titulo h2 {
+        font-size: 1rem;
+    }
 
     .container-accordion {
         width: 100%;
         padding: 0px 16px;
+    }
+
+    .menu a:hover {
+        color: #DB222A;
+        background-color: #d3d3d3;
+    }
+
+    .titulo p {
+        font-size: .9rem;
+    }
+
+    footer p {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    
+    .titulo h1 {
+        font-size: 1.8rem;
+    }
+
+    .sobre .img-local {
+        height: 200px;
+    }
+
+    .card {
+        border-bottom: 3px solid var(--cor-primaria) ;
     }
 
 }

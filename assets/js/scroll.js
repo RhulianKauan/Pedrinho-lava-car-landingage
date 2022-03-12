@@ -1,8 +1,19 @@
 
-// Identificar o clique no menu
-// Verificar o item que foi clicado e fazer referência com o alvo
-// Verificar a distância entre o alvo e o topo
-// Animar o scroll até o alvo
+// Scroll reave
+
+ScrollReveal({ 
+  reset: true,
+  distance: '40px',
+  duration: 1500,
+  delay: 200
+ });
+
+ ScrollReveal().reveal('section', { delay: 500 });
+
+
+
+
+// Scroll suave
 
 const menuItems = document.querySelectorAll('a[href^="#"]');
 

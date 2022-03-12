@@ -5,6 +5,8 @@ function toggleMenu() {
     nav.classList.toggle('active');
 }
 
+
+
 btnMobile.addEventListener('click', toggleMenu);
 
 
